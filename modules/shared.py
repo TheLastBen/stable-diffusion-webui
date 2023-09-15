@@ -199,7 +199,7 @@ class State:
         self.skipped = False
         self.interrupted = False
         self.textinfo = None
-        self.time_start = 0
+        self.time_start = time.time()
         devices.torch_gc()
 
     def end(self):
